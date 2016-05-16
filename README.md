@@ -103,6 +103,7 @@ The Jenkins Replication Controller is defined in `kubernetes/jenkins/jenkins.yam
 
 ```shell
 $ kubectl create -f kubernetes/jenkins/jenkins.yaml
+replicationcontroller "jenkins-leader" created
 
 $ kubectl get pods
 NAME                   READY     STATUS              RESTARTS   AGE
@@ -125,7 +126,7 @@ The build agent Replication Controller is defined in `kubernetes/jenkins/build_a
 
 ```shell
 $ kubectl create -f kubernetes/jenkins/build_agent.yaml
-replicationcontrollers/jenkins-builder
+replicationcontroller "jenkins-builder" created
 
 $ kubectl get pods
 NAME                   READY     STATUS    RESTARTS   AGE
