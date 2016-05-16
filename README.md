@@ -103,11 +103,10 @@ The Jenkins Replication Controller is defined in `kubernetes/jenkins/jenkins.yam
 
 ```shell
 $ kubectl create -f kubernetes/jenkins/jenkins.yaml
-replicationcontrollers/jenkins-leader
 
 $ kubectl get pods
-NAME                   READY     STATUS    RESTARTS   AGE
-jenkins-leader-to8xg   0/1       Pending   0          30s
+NAME                   READY     STATUS              RESTARTS   AGE
+jenkins-leader-to8xg   0/1       ContainerCreating   0          30s
 ```
 
 Now, deploy the Jenkins Service found in `kubernetes/jenkins/service_jenkins.yaml`:
