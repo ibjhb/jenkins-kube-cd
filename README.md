@@ -138,6 +138,7 @@ Resize the build agent replication controller to contain 5 pods:
 
 ```shell
 $ kubectl scale replicationcontroller jenkins-builder --replicas=5
+replicationcontroller "jenkins-builder" scaled
 ```
 
 Use `kubectl` to verify that 5 pods are running.
